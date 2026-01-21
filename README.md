@@ -1,11 +1,18 @@
 # SecITred_tools
 RedTeam Go Toolkit — Tool Instructions
 
+ **Disclaimer / Zrzeczenie się odpowiedzialności
+This tool is intended for legal security analysis, authorized testing, and educational purposes only. The authors are not responsible for any misuse of this software.
+
+Narzędzie służy wyłącznie do legalnej analizy bezpieczeństwa, autoryzowanych testów i celów edukacyjnych. Autorzy nie ponoszą odpowiedzialności za niewłaściwe wykorzystanie oprogramowania.
+**
+
+
 <img width="2553" height="1009" alt="RedTools" src="https://github.com/user-attachments/assets/b8d90846-a135-41a1-8e44-ad0ab45ffd42" />
 
 # SecITRed 
 
-[![Go Version]([https://img.shields.io/github/go-mod/go-version/sanfaro/SecITRed](https://github.com/sanfaro/SecITred_tools/tree/main))](https://golang.org/)
+[![Go Version](version go1.25.5)](https://golang.org/)
 
 [![Platform](WEB)
 
@@ -24,10 +31,10 @@ Think of it as your **personal cyber-workshop**—a place where you can quickly 
 
 ###  Key Features
 
-*   **⚡Single Binary:** Written in Go, compiles to a standalone executable with zero dependencies. No installation required.
-*   ** Plugin System:** Extend functionality easily using JSON files. Wrap any external tool (Nmap, Python scripts, curl) and use it directly from the UI.
-*   ** Pipeline Mode:** Chain multiple tools together (e.g., *Base64 Decode -> Extract IPs -> Scan Ports*) just like in CyberChef.
-*   ** Essential Tools:**
+*   **Single Binary:** Written in Go, compiles to a standalone executable with zero dependencies. No installation required.
+*   **Plugin System:** Extend functionality easily using JSON files. Wrap any external tool (Nmap, Python scripts, curl) and use it directly from the UI.
+*   **Pipeline Mode:** Chain multiple tools together (e.g., *Base64 Decode -> Extract IPs -> Scan Ports*) just like in CyberChef.
+*   **Essential Tools:**
     *   **Crypto:** Base64, XOR, Caesar, ROT13, SHA256, HashID.
     *   **Recon/OSINT:** Shodan, VirusTotal, AbuseIPDB, CRT.sh (Subdomains), DNS Records, Whois.
     *   **Red Team:** Reverse Shell Generator, Port Scanner.
@@ -42,7 +49,8 @@ Go to the [Releases](https://github.com/sanfaro/SecITred_tools) page and downloa
 
 #### Option 2: Build from Source
 Requirements: Go 1.21+
-```bash
+```
+bash
 git clone https://github.com/sanfaro/SecITred_tools.git
 cd SecITRed
 go run main.go
@@ -307,6 +315,7 @@ URL
 API Key:
 Required
 
+
 Output:
 Scan ID and metadata.
 
@@ -315,3 +324,69 @@ Use cases:
 Phishing investigation
 
 Web malware analysis
+```
+Wersja Polska
+Czym jest SecITRed?
+SecITRed to wszechstronny przybornik bezpieczeństwa zaprojektowany jako centralny HUB dla analityków SOC, Blue Teamów i Red Teamów. Działa jako lekki, lokalny serwer WWW, który integruje kluczowe narzędzia kryptograficzne, OSINT-owe i sieciowe w jednym, spójnym interfejsie.
+
+To Twój osobisty cyfrowy warsztat – miejsce, gdzie możesz błyskawicznie dekodować dane, sprawdzać reputację adresów IP, generować payloady i łączyć operacje w ciągi, bez konieczności skakania między dziesięcioma kartami przeglądarki i terminalem.
+ Główne Funkcje
+Pojedyncza Binarka: Napisany w Go, kompiluje się do jednego pliku .exe (lub binarki Linux). Zero zależności, zero instalacji.
+
+System Pluginów: Łatwe rozszerzanie funkcjonalności za pomocą plików JSON. Podepnij dowolne narzędzie (Nmap, skrypty Python, curl) i używaj go z poziomu przeglądarki.
+
+Tryb Pipeline: Łącz narzędzia w łańcuchy (np. Base64 Decode -> Wyciągnij IP -> Skanuj Porty), działając na zasadzie "przepisu" (recipe).
+
+Wbudowane Narzędzia:
+
+Krypto: Base64, XOR, Cezar, ROT13, SHA256, Identyfikator Hashy.
+
+Recon/OSINT: Shodan, VirusTotal, AbuseIPDB, CRT.sh (Subdomeny), Rekordy DNS, Whois.
+
+Red Team: Generator Reverse Shell, Skaner Portów.
+
+Blue Team: Analiza Nagłówków Email (Phishing), Debugger JWT, Nagłówki HTTP.
+
+ Obserwowalność: Konsola logów systemowych na żywo wbudowana w interfejs.
+
+ Prywatność: Działa lokalnie na localhost:8080. Twoje dane zostają na Twoim komputerze (chyba że odpytujesz zewnętrzne API).
+
+ Instalacja
+Opcja 1: Pobierz gotowy program
+Wejdź w zakładkę Releases i pobierz wersję dla swojego systemu (Windows/Linux/macOS).
+
+Opcja 2: Kompilacja ze źródeł
+Wymagania: Go 1.21+
+
+bash
+git clone https://github.com/YourUsername/SecITRed.git
+cd SecITRed
+go run main.go
+# LUB zbuduj
+go build -o SecITRed.exe main.go
+🎮 Użycie
+Uruchom aplikację:
+
+bash
+./SecITRed.exe
+Otwórz przeglądarkę pod adresem http://localhost:8080.
+
+(Opcjonalnie) Ustaw klucze API w zmiennych środowiskowych, aby korzystać z pełnej mocy OSINT (Shodan, VT):
+
+SHODAN_API_KEY
+
+VT_API_KEY
+ Dodawanie Pluginów
+Stwórz plik JSON w folderze plugins/, aby dodać własne narzędzie. Przykład ping.json:
+
+json
+{
+  "name": "sprawdz-ping",
+  "category": "recon",
+  "command": "ping",
+  "args": ["-n", "4", "{{input}}"],
+  "inputLabel": "Adres IP celu",
+  "needsKey": false
+}
+
+
