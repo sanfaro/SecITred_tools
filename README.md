@@ -14,7 +14,6 @@ Narzędzie służy wyłącznie do legalnej analizy bezpieczeństwa, autoryzowany
 
 [![Go Version](version go1.25.5)](https://golang.org/)
 
-[![Platform](WEB)
 
 [English Version](#english-version) | [ Wersja Polska](#wersja-polska)
 
