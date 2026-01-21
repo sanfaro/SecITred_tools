@@ -5,7 +5,7 @@ RedTeam Go Toolkit — Tool Instructions
 
 # SecITRed 
 
-[![Go Version](https://img.shields.io/github/go-mod/go-version/YourUsername/SecITRed)](https://golang.org/)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/sanfaro/SecITRed)](https://golang.org/)
 
 [![Platform](WEB)
 
