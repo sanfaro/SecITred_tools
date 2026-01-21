@@ -1,11 +1,57 @@
 # SecITred_tools
 RedTeam Go Toolkit — Tool Instructions
 
-Important Notice
-This toolkit is intended only for ethical security testing, defensive research, and incident response activities.
-Use only on systems you own or have explicit permission to test.
-The authors take no responsibility for misuse.
 <img width="2553" height="1009" alt="RedTools" src="https://github.com/user-attachments/assets/b8d90846-a135-41a1-8e44-ad0ab45ffd42" />
+
+# SecITRed 
+
+[![Go Version](https://img.shields.io/github/go-mod/go-version/YourUsername/SecITRed)](https://golang.org/)
+
+[![Platform](WEB)
+
+[English Version](#english-version) | [ Wersja Polska](#wersja-polska)
+
+---
+
+<div id="english-version"></div>
+
+##  English Version
+
+### What is SecITRed?
+**SecITRed** is an All-in-One security toolbox designed to act as a **daily HUB for SOC Analysts, Blue Teams, and Red Teams**. It functions as a lightweight, local web server that aggregates essential crypto, OSINT, and network utilities into a single, cohesive interface.
+
+Think of it as your **personal cyber-workshop**—a place where you can quickly decode data, check IP reputation, generate payloads, and chain operations together without juggling ten different browser tabs and CLI tools.
+
+###  Key Features
+
+*   **⚡Single Binary:** Written in Go, compiles to a standalone executable with zero dependencies. No installation required.
+*   ** Plugin System:** Extend functionality easily using JSON files. Wrap any external tool (Nmap, Python scripts, curl) and use it directly from the UI.
+*   ** Pipeline Mode:** Chain multiple tools together (e.g., *Base64 Decode -> Extract IPs -> Scan Ports*) just like in CyberChef.
+*   ** Essential Tools:**
+    *   **Crypto:** Base64, XOR, Caesar, ROT13, SHA256, HashID.
+    *   **Recon/OSINT:** Shodan, VirusTotal, AbuseIPDB, CRT.sh (Subdomains), DNS Records, Whois.
+    *   **Red Team:** Reverse Shell Generator, Port Scanner.
+    *   **Blue Team:** Email Header Analyzer (Phishing), JWT Debugger, HTTP Headers.
+*   ** Observability:** Live system logs console built directly into the UI.
+*   ** Privacy:** Runs locally on `localhost:8080`. Your data stays on your machine (unless you query external APIs).
+
+### Installation
+
+#### Option 1: Download Binary
+Go to the [Releases](https://github.com/sanfaro/SecITred_tools) page and download the version for your OS (Windows/Linux/macOS).
+
+#### Option 2: Build from Source
+Requirements: Go 1.21+
+```bash
+git clone https://github.com/sanfaro/SecITred_tools.git
+cd SecITRed
+go run main.go
+# OR build
+go build -o SecITRed main.go
+
+
+
+
 
  CRYPTO / ENCODING TOOLS
 - Echo
