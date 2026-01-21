@@ -325,7 +325,8 @@ Phishing investigation
 
 Web malware analysis
 ```
-Wersja Polska
+<div id="wersja-polska"></div>
+
 Czym jest SecITRed?
 SecITRed to wszechstronny przybornik bezpieczeństwa zaprojektowany jako centralny HUB dla analityków SOC, Blue Teamów i Red Teamów. Działa jako lekki, lokalny serwer WWW, który integruje kluczowe narzędzia kryptograficzne, OSINT-owe i sieciowe w jednym, spójnym interfejsie.
 
