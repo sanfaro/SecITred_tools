@@ -85,7 +85,7 @@ Pobierz z zakladki Releases i uruchom plik wykonywalny. Wejdz na http://localhos
 Opcja 2: Kompilacja (Go 1.21+)
 
 bash
-https://github.com/sanfaro/SecITRed](https://github.com/sanfaro/SecITred_tools/tree/main
+https://github.com/sanfaro/SecITred_tools/tree/main
 go build -ldflags="-s -w" -o SecITRed.exe main.go
 ./SecITRed.exe
 Dodawanie Pluginow
