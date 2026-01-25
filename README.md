@@ -67,9 +67,11 @@ json
   "needsKey": false
 }
 <div id="polski"></div>
-##Polski Szybki Start
 
-###Glowne Funkcje
+
+## POLSKI SZYBKI START
+
+### Glowne Funkcje
 
 SOC/Blue Team: Ekstrakcja IOC (IP/URL), Analiza Logow i User-Agent, Naglowki Email, Dekoder JWT.
 
