@@ -52,7 +52,7 @@ Download from Releases and run the executable. Open http://localhost:8080.
 **Option 2: Build from Source (Go 1.21+)**
 bash
 
-git clone https://github.com/sanfaro/SecITRed.git
+git clone https://github.com/sanfaro/SecITRed
 go build -ldflags="-s -w" -o SecITRed main.go
 ./SecITRedAdding Plugins
 Create a JSON file in the "plugins" directory (e.g., plugins/ping.json):
