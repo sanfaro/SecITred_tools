@@ -67,8 +67,10 @@ json
   "needsKey": false
 }
 <div id="polski"></div>
-Polski Szybki Start
-Glowne Funkcje
+##Polski Szybki Start
+
+###Glowne Funkcje
+
 SOC/Blue Team: Ekstrakcja IOC (IP/URL), Analiza Logow i User-Agent, Naglowki Email, Dekoder JWT.
 
 Red Team: Baza GTFOBins, PowerShell Encoder, Generowanie Reverse Shell, Skaner plikow wrazliwych.
