@@ -24,7 +24,7 @@ Narzędzie służy wyłącznie do legalnej analizy bezpieczeństwa, autoryzowany
 
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-blue)](https://golang.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-%7C%20Linux%20%7C%-lightgrey)](https://github.com/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)](https://github.com/)
 
 **SecITRed** is a comprehensive, standalone cybersecurity hub designed for SOC Analysts, Penetration Testers, and Security Researchers. It acts as a local web server, aggregating essential cryptographic, OSINT, and analysis tools into a single, cohesive interface.
 
