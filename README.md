@@ -73,13 +73,10 @@ json
 
 ### Glowne Funkcje
 
-SOC/Blue Team: Ekstrakcja IOC (IP/URL), Analiza Logow i User-Agent, Naglowki Email, Dekoder JWT.
-
-Red Team: Baza GTFOBins, PowerShell Encoder, Generowanie Reverse Shell, Skaner plikow wrazliwych.
-
-Sandbox: Statyczna analiza binarna (PE/ELF), Obliczanie Hashy, integracja z VirusTotal.
-
-Automatyzacja: Pipeline narzedzi (laczenie zadan) i System Pluginow (obsluga zewnetrznych programow przez JSON).
+*   **SOC/Blue Team:** Ekstrakcja IOC (IP/URL), Analiza Logow i User-Agent, Naglowki Email, Dekoder JWT.
+*   **Red Team:** Baza GTFOBins, PowerShell Encoder, Generowanie Reverse Shell, Skaner plikow wrazliwych.
+*   **Sandbox:** Statyczna analiza binarna (PE/ELF), Obliczanie Hashy, integracja z VirusTotal.
+*   **Automatyzacja:** Pipeline narzedzi (laczenie zadan) i System Pluginow (obsluga zewnetrznych programow przez JSON).
 
 Instalacja
 Opcja 1: Binarka
