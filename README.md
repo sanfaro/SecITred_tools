@@ -9,6 +9,10 @@ Narzędzie służy wyłącznie do legalnej analizy bezpieczeństwa, autoryzowany
 
 
 <img width="2553" height="1009" alt="RedTools" src="https://github.com/user-attachments/assets/b8d90846-a135-41a1-8e44-ad0ab45ffd42" />
+(ver 0.1)
+<img width="2541" height="1234" alt="RedTools" src="https://github.com/user-attachments/assets/a3b3d95f-397e-4d0d-89f0-02debe0d94e0" />
+(ver 0.11)
+
 
 # SecITRed 
 
