@@ -94,7 +94,7 @@ Download the latest release for your OS and run it.
 bash
 
 # Clone the repository
-git clone https://github.com/YourUsername/SecITRed.git
+git clone https://github.com/sanfaro/SecITred_tools.git
 cd SecITRed
 
 # Run directly
@@ -184,7 +184,7 @@ Wymagania: Zainstalowane środowisko Go 1.21+.
 
 bash
 # Sklonuj repozytorium
-git clone https://github.com/TwojNick/SecITRed.git
+git clone https://github.com/sanfaro/SecITRed.git
 cd SecITRed
 
 # Uruchom bezpośrednio
